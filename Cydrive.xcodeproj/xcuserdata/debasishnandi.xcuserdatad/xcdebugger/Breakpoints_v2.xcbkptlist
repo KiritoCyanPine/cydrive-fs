@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D7E02EC1-5D29-4436-B4CC-CB2484B54D6B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F39DC4F-F77E-455F-8665-4FDF2DE749C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "enumerator(for:request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D59F1FB5-BDF4-4A4C-86D6-4C4D8D27A6AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtention+Support.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "getParentIdentifier(of:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65C3F409-BF96-4855-B350-47632FA86832"
+            shouldBeEnabled = "No"
+            condition = "changedFields.contains(.contents)"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C6A8085A-BFBB-4D9F-BDD9-5836E123A3E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileChunker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "open(url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E362C91-ADE1-48EB-B66C-38688013DFF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtention+Support.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "WriteToIPFSWithProgress(filePath:url:enableTruncate:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66CAC723-5FDB-4966-A619-A5284C97DD02"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "224"
+            endingLineNumber = "224"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "66CAC723-5FDB-4966-A619-A5284C97DD02 - 7fff3d094cbf7854"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "224"
+                  endingLineNumber = "224"
+                  offsetFromSymbolStart = "2760">
+               </Location>
+               <Location
+                  uuid = "66CAC723-5FDB-4966-A619-A5284C97DD02 - 7fff3d094cbf7854"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "224"
+                  endingLineNumber = "224"
+                  offsetFromSymbolStart = "2864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D39ACC7A-48E7-451C-BAE6-40AE9F5ECAD2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtention+Support.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "WriteToIPFS(filePath:url:enableTruncate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B11028C0-3570-4D8D-B920-4229AB03C470"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtention+Support.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "WriteToIPFS(filePath:url:enableTruncate:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B11028C0-3570-4D8D-B920-4229AB03C470 - 56682bd555c208ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Extention.FileProviderExtension.WriteToIPFS(filePath: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) async throws -&gt; ()"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "436">
+               </Location>
+               <Location
+                  uuid = "B11028C0-3570-4D8D-B920-4229AB03C470 - c118c41708ae94c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Extention.FileProviderExtension.WriteToIPFS(filePath: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) async throws -&gt; ()"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "2912">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83011565-5C0C-42BB-B5CF-5AA06AF5202F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtention+Support.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "WriteToIPFS(filePath:url:enableTruncate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3D44C55-7BDF-49D8-B9CB-33A6112DDF51"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileChunker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "open(url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DEB5F2B5-F164-4FE4-844E-27E1432D9BF1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/Reader.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "open()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DEB5F2B5-F164-4FE4-844E-27E1432D9BF1 - 50dc962d5769187c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Extention.CFileStreamReader.open() throws -&gt; ()"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/Reader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "2276">
+               </Location>
+               <Location
+                  uuid = "DEB5F2B5-F164-4FE4-844E-27E1432D9BF1 - 50dc962d5769181d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Extention.CFileStreamReader.open() throws -&gt; ()"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/Reader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2712">
+               </Location>
+               <Location
+                  uuid = "DEB5F2B5-F164-4FE4-844E-27E1432D9BF1 - 50dc962d576919d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Extention.CFileStreamReader.open() throws -&gt; ()"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/Reader.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "904">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12EBE154-399D-4E7C-A2DC-3C9F95E47ABA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "FilesReadDownload(filepath:file:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "12EBE154-399D-4E7C-A2DC-3C9F95E47ABA - 5d3729b486a442f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "12EBE154-399D-4E7C-A2DC-3C9F95E47ABA - 72eea2c397500050"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "12EBE154-399D-4E7C-A2DC-3C9F95E47ABA - 4b6461d3a30d5e27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "12EBE154-399D-4E7C-A2DC-3C9F95E47ABA - 64bdeaa4b2f91c84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "12EBE154-399D-4E7C-A2DC-3C9F95E47ABA - 64bdeaa4b2f91c84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "12EBE154-399D-4E7C-A2DC-3C9F95E47ABA - 72eea2c397500050"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6ED41D3C-1665-46DF-BA99-FFBBC49F2D39"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "FilesReadDownload(filepath:file:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "6ED41D3C-1665-46DF-BA99-FFBBC49F2D39 - 64bdeaa4b2f91c84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "6ED41D3C-1665-46DF-BA99-FFBBC49F2D39 - 72eea2c397500050"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "6ED41D3C-1665-46DF-BA99-FFBBC49F2D39 - 64bdeaa4b2f91c84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "6ED41D3C-1665-46DF-BA99-FFBBC49F2D39 - 72eea2c397500050"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27CAB774-4714-4DC2-A9CC-8AA7CE766F5F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "FilesReadDownload(filepath:file:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "27CAB774-4714-4DC2-A9CC-8AA7CE766F5F - 72eea2c39750014f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "388">
+               </Location>
+               <Location
+                  uuid = "27CAB774-4714-4DC2-A9CC-8AA7CE766F5F - 64bdeaa4b2f91dd9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "388">
+               </Location>
+               <Location
+                  uuid = "27CAB774-4714-4DC2-A9CC-8AA7CE766F5F - 72eea2c39750010d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesReadDownload(filepath: Swift.String, file: Foundation.URL, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; __C.NSProgress"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FileReadDownload.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "388">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0255CCE2-31A5-4FBE-A69B-7D8462BA6EEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0255CCE2-31A5-4FBE-A69B-7D8462BA6EEC - 7fff3d094cb0843a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "764">
+               </Location>
+               <Location
+                  uuid = "0255CCE2-31A5-4FBE-A69B-7D8462BA6EEC - 7fff3d094cb0843a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "672">
+               </Location>
+               <Location
+                  uuid = "0255CCE2-31A5-4FBE-A69B-7D8462BA6EEC - 7fff3d094cb0849f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "688">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1BDB50F-2A8A-4C4C-AE83-EF456A981B49"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3E130FD-1BF3-4E04-B1CA-2FF74D64CC8D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B3E130FD-1BF3-4E04-B1CA-2FF74D64CC8D - 7f7ed33fd8aa7681"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "B3E130FD-1BF3-4E04-B1CA-2FF74D64CC8D - 291404ace06d1b72"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "B3E130FD-1BF3-4E04-B1CA-2FF74D64CC8D - 5222b51b62ccb283"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "B3E130FD-1BF3-4E04-B1CA-2FF74D64CC8D - 92183de4fa095c8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "203"
+                  endingLineNumber = "203"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "B3E130FD-1BF3-4E04-B1CA-2FF74D64CC8D - 3f12119cf7248912"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 @Sendable () async -&gt; () in closure #1 (Swift.Optional&lt;__C.NSFileProviderItem&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.modifyItem(_: __C.NSFileProviderItem, baseVersion: __C.NSFileProviderItemVersion, changedFields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderModifyItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F952730-6E8A-4FD1-A3BE-232442A5DCA5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0327A5CE-5D33-4DFE-A12A-B02417F2FCF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC24EFBB-7542-4A3A-8948-672ED3D78ABF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "169"
+            endingLineNumber = "169"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20709F0F-EB7A-4B1E-8C65-138EC32AC937"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtention+Support.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "WriteToIPFSWithProgress(filePath:url:enableTruncate:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "20709F0F-EB7A-4B1E-8C65-138EC32AC937 - e0c83247d1e8fca0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in Extention.FileProviderExtension.WriteToIPFSWithProgress(filePath: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "20709F0F-EB7A-4B1E-8C65-138EC32AC937 - a78ec89844b5096"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in Extention.FileProviderExtension.WriteToIPFSWithProgress(filePath: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "1572">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62CE14DA-F00C-4A36-B096-3B516C80CEE4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtention+Support.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "WriteToIPFSWithProgress(filePath:url:enableTruncate:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "62CE14DA-F00C-4A36-B096-3B516C80CEE4 - e0c83247d1e8fdee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in Extention.FileProviderExtension.WriteToIPFSWithProgress(filePath: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "944">
+               </Location>
+               <Location
+                  uuid = "62CE14DA-F00C-4A36-B096-3B516C80CEE4 - f367fa50bc9b506d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in Extention.FileProviderExtension.WriteToIPFSWithProgress(filePath: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "62CE14DA-F00C-4A36-B096-3B516C80CEE4 - a78ec89844b51d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in Extention.FileProviderExtension.WriteToIPFSWithProgress(filePath: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "62CE14DA-F00C-4A36-B096-3B516C80CEE4 - c0a37e6892e507d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in Extention.FileProviderExtension.WriteToIPFSWithProgress(filePath: Swift.String, url: Swift.Optional&lt;Foundation.URL&gt;) throws -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A89EE30F-C29F-41E8-A080-A3141180B6A2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "FilesWrite(filepath:data:range:truncate:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "A89EE30F-C29F-41E8-A080-A3141180B6A2 - 4687e65f6294029f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; ()"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "2216">
+               </Location>
+               <Location
+                  uuid = "A89EE30F-C29F-41E8-A080-A3141180B6A2 - 50d4ae38473d1e4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; ()"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "2216">
+               </Location>
+               <Location
+                  uuid = "A89EE30F-C29F-41E8-A080-A3141180B6A2 - 7686f718244fa498"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; ()"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "A89EE30F-C29F-41E8-A080-A3141180B6A2 - 60d5bf7f01e6b84c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; ()"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "A89EE30F-C29F-41E8-A080-A3141180B6A2 - 56bb2887a8d2b86b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, truncate: Swift.Bool, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; ()"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "2256">
+               </Location>
+               <Location
+                  uuid = "A89EE30F-C29F-41E8-A080-A3141180B6A2 - 42501de4a378c41b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, truncate: Swift.Bool, completion: (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) throws -&gt; ()"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "FilesWrite(filepath:data:range:truncate:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - a7341e44cf62388c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2168">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - 6ff8ef558fab9f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - 1e93e88b075a7c8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - adbc1c36bb279e89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "FileExplorerIPFS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - b1675623eacb2458"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2168">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - 10acc6927d53a520"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - 8c0a0ec22f3605a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - bbef54519e8e825d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;) async throws -&gt; Foundation.Data"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - a627c5614e626299"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, truncate: Swift.Bool) async throws -&gt; Foundation.Data"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2216">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - 826ef1aa8b7a247b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, truncate: Swift.Bool) async throws -&gt; Foundation.Data"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - 688f46d3ef642edb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, truncate: Swift.Bool) async throws -&gt; Foundation.Data"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "2BCC1ED1-37AE-44C0-96F1-8AE6225CB11E - d1c3068b5ce708fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for ipfs_api.FilesWrite(filepath: Swift.String, data: Foundation.Data, range: Swift.Optional&lt;__C._NSRange&gt;, truncate: Swift.Bool) async throws -&gt; Foundation.Data"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/ipfs-api/Sources/ipfs-api/ipfs-call-api/FilesWrite.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33B6B336-73A7-48E3-9456-620B2106FCFC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "createItem(basedOn:fields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A901F46-184D-4A38-B4E5-A0AF60604B80"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A951D1D0-9BB5-4FA8-99D5-824308A9C02D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7D1C283-5E90-406D-B09C-7202389427BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "253"
+            endingLineNumber = "253"
+            landmarkName = "modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55F24F8F-263C-4A6F-B421-2992A24F9E03"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtention+Support.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getParentIdentifier(of:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "55F24F8F-263C-4A6F-B421-2992A24F9E03 - f99d28935dd5d567"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Extention.FileProviderExtension.getParentIdentifier(of: Swift.String) -&gt; __C.NSFileProviderItemIdentifier"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "55F24F8F-263C-4A6F-B421-2992A24F9E03 - f99d28935dd5d567"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Extention.FileProviderExtension.getParentIdentifier(of: Swift.String) -&gt; __C.NSFileProviderItemIdentifier"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtention+Support.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52BBB046-9890-478B-9FB8-4DFF56269EFE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FileExplorerIPFS/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "endServe()"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B96EB3F1-1BF6-41D2-866B-F989DFB9100A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderEnumerator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "enumerateItems(for:startingAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07F6690E-5645-4E64-9C01-42B8F72C70AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
+            landmarkName = "enumerator(for:request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "862D9093-98EC-422B-A9B7-A3506EA1DA1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderEnumerator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F72A69C-6E8E-48FA-9B27-997C156180CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtention+Support.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getIPFSFileDetails(inpath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F21D7A6-F726-4069-A061-D81FEBAD4AA0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Extention/FileProviderExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "createItem(basedOn:fields:contents:options:request:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0F21D7A6-F726-4069-A061-D81FEBAD4AA0 - b6ad2813fa7e8111"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Extention.FileProviderExtension.createItem(basedOn: __C.NSFileProviderItem, fields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderCreateItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "2264">
+               </Location>
+               <Location
+                  uuid = "0F21D7A6-F726-4069-A061-D81FEBAD4AA0 - 87ae113eaab4b826"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Extention.FileProviderExtension.createItem(basedOn: __C.NSFileProviderItem, fields: __C.NSFileProviderItemFields, contents: Swift.Optional&lt;Foundation.URL&gt;, options: __C.NSFileProviderCreateItemOptions, request: __C.NSFileProviderRequest, completionHandler: (Swift.Optional&lt;__C.NSFileProviderItem&gt;, __C.NSFileProviderItemFields, Swift.Bool, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; __C.NSProgress"
+                  moduleName = "Extention"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/debasishnandi/test-projects/FileExplorerIPFS/Extention/FileProviderExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "136"
+                  endingLineNumber = "136"
+                  offsetFromSymbolStart = "348">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
