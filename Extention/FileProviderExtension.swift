@@ -36,28 +36,39 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
         super.init()
     }
     
-    
     func invalidate() {
     }
     
-    
     func item(for identifier: NSFileProviderItemIdentifier, request: NSFileProviderRequest, completionHandler: @escaping (NSFileProviderItem?, Error?) -> Void) -> Progress {
+        
+//        var cachedItem = FileProviderEnumerator.ContentMap[identifier.rawValue]
+//
+//        completionHandler(cachedItem,nil)
+//
+//        return Progress()
         Task {
             if identifier == .rootContainer || identifier == .trashContainer || identifier == .workingSet {
-                completionHandler(Item(identifier: identifier ), nil)
+                completionHandler(CyItem(identifier: identifier ), nil)
                 return
             }
             
             if identifier.rawValue == "/" {
-                completionHandler(Item(identifier: .rootContainer ), nil)
+                completionHandler(CyItem(identifier: .rootContainer ), nil)
                 return
             }
             
-            let fpath = URL.toIPFSPath(path: identifier.rawValue)
+            var cachedItem = FileProviderEnumerator.ContentMap[identifier.rawValue]
+        
+            if cachedItem == nil {
+                let fpath = URL.toIPFSPath(path: identifier.rawValue)
+                
+                let ipfsItem = try await getIPFSFileDetails(inpath: fpath)
+                
+                completionHandler(ipfsItem, nil)
+            } else {
+                completionHandler(cachedItem, nil)
+            }
             
-            let ipfsItem = try await getIPFSFileDetails(inpath: fpath)
-            
-            completionHandler(ipfsItem, nil)
             return
         }
         
@@ -66,7 +77,7 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
     
     func fetchContents(for itemIdentifier: NSFileProviderItemIdentifier, version requestedVersion: NSFileProviderItemVersion?, request: NSFileProviderRequest, completionHandler: @escaping (URL?, NSFileProviderItem?, Error?) -> Void) -> Progress {
 
-        let filepath = URL.toIPFSPath(path: "/"+itemIdentifier.rawValue)
+        let filepath = URL.toIPFSPathForOprations(path: itemIdentifier.rawValue)
         let dataURL = self.makeTemporaryURL("fetchedContents")
         
         do {
@@ -107,7 +118,7 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
             filepath = itemTemplate.parentItemIdentifier.rawValue+"/"+itemTemplate.filename
         }
         
-        let fpath = URL.toIPFSPath(path: filepath)
+        let fpath = URL.toIPFSPathForOprations(path: filepath)
         
         switch cType{
         case .folder:
@@ -115,15 +126,25 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
                 do {
                     try await FilesMkDir(filepath: fpath)
                     
-                    let itemPath = URL.toItemIdentifier(path: fpath)
+                    let itemPath = URL.toItemIdentifier(string: fpath)
                     
                     let folder = File(Name: itemPath, Hash: "", Size: 0, type: 1)
                     
                     let parentIdentifier = getParentIdentifier(of: itemPath)
                     
-                    let item = Item(fileItem: folder,parentItem: parentIdentifier)
+                    var _ = self.item(for: NSFileProviderItemIdentifier(fpath), request: request) { itemOptional, errorOptional in
+                        defer {
+                            if let item = itemOptional {
+                                self.evictItem(Item: item)
+                            }
+                        }
+                        
+                        completionHandler(itemOptional, [], false, nil)
+                    }
                     
-                    completionHandler(item, [], false, nil)
+//                    let item = CyItem(fileItem: folder,parentItem: parentIdentifier)
+//                    
+//                    completionHandler(item, [], false, nil)
                 } catch {
                     self.logger.error("❌ Error In CreateItem <FOLDER>: , \(error)")
                 }
@@ -139,12 +160,26 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
                         return
                     }
                     
-                    Task{
-                        let newitem = try await self.getIPFSFileDetails(inpath: fpath)
-                        defer { self.evictItem(Item: newitem) }
+                    var _ = self.item(for: NSFileProviderItemIdentifier(fpath), request: request) { itemOptional, errorOptional in
+                        defer {
+                            if let item = itemOptional {
+                                self.evictItem(Item: item)
+                            }
+                        }
                         
-                        completionHandler(newitem, [], false, nil)
+                        completionHandler(itemOptional, [], false, nil)
+                        
+                        Task{
+                            try await FilesClose(filepath: fpath)
+                        }
                     }
+                    
+//                    Task{
+//                        let newitem = try await self.getCyIPFSFileDetails(inpath: fpath)
+//                        defer { self.evictItem(Item_Old: newitem) }
+//
+//                        completionHandler(newitem, [], false, nil)
+//                    }
                 })
                 
                 return createProgress
@@ -180,8 +215,8 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
                     tempdst = item.filename
                 }
                 
-                let src = URL.toIPFSPath(path: tempsrc)
-                let dst = URL.toIPFSPath(path: tempdst)
+                let src = URL.toIPFSPathForOprations(path: tempsrc)
+                let dst = URL.toIPFSPathForOprations(path: tempdst)
                 
                 Task{
                     do {
@@ -219,7 +254,7 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
                     filepath = item.parentItemIdentifier.rawValue+"/"+item.filename
                 }
                 
-                filepath = URL.toIPFSPath(path: filepath)
+                filepath = URL.toIPFSPathForOprations(path: filepath)
                 
                 guard let url = newContents else {
                     return
@@ -240,6 +275,8 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
                         defer { self.evictItem(Item: newitem) }
                         
                         completionHandler(newitem, [], false, nil)
+                        
+                        try await FilesClose(filepath: fpath)
                     }
                     
                 } catch {
@@ -268,7 +305,8 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
                 return
             }
             
-            let fPath = URL.toIPFSPath(path: item.itemIdentifier.rawValue)
+//            let fPath = URL.toIPFSPath(path: item.itemIdentifier.rawValue)
+            let fPath = URL.toIPFSPathForOprations(path: item.itemIdentifier.rawValue)
             
             do {
                 try FilesRm(ipfspath: fPath) { errorOptional in
@@ -289,6 +327,8 @@ class FileProviderExtension: NSObject, NSFileProviderReplicatedExtension {
     
     func enumerator(for containerItemIdentifier: NSFileProviderItemIdentifier, request: NSFileProviderRequest) throws -> NSFileProviderEnumerator {
         var container = containerItemIdentifier
+        
+        print("\n\nENUMERATOR \n\n")
         
         if container == .workingSet {
             return WorkingSetEnumerator()

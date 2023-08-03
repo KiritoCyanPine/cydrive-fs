@@ -2,8 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFile</key>
+			<string>ProviderIcon</string>
+			<key>CFBundleSymbolName</key>
+			<string>mounticon</string>
+		</dict>
+	</dict>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>NSExtension</key>
 	<dict>
+		<key>NSFileProviderDecorations</key>
+		<array>
+			<dict>
+				<key>BadgeImageType</key>
+				<string>com.apple.icon-decoration.pinned</string>
+				<key>Category</key>
+				<string>Badge</string>
+				<key>Identifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).cyfile</string>
+				<key>Label</key>
+				<string>CydriveFile</string>
+			</dict>
+		</array>
 		<key>NSExtensionFileProviderDocumentGroup</key>
 		<string>$(TeamIdentifierPrefix)com.example.app-group</string>
 		<key>NSExtensionFileProviderSupportsEnumeration</key>
@@ -12,6 +37,69 @@
 		<string>com.apple.fileprovider-nonui</string>
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).FileProviderExtension</string>
+		<key>NSExtensionFileProviderActions</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Note that we are comparing with != YES instead of == NO in the query to avoid having to write out the value for the default case</string>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.userInfo.heart != YES &amp;&amp; $item.itemIdentifier != &quot;NSFileProviderRootContainerItemIdentifier&quot; ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).action.mshare</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>CONTEXT_MENU_SHARE</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Note that we are comparing with != YES instead of == NO in the query to avoid having to write out the value for the default case</string>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.userInfo.heart != YES &amp;&amp; $item.itemIdentifier != &quot;NSFileProviderRootContainerItemIdentifier&quot; ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).action.vhistory</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>CONTEXT_MENU_VERSION_HISTORY</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Note that we are comparing with != YES instead of == NO in the query to avoid having to write out the value for the default case</string>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.userInfo.heart != YES &amp;&amp; $item.itemIdentifier != &quot;NSFileProviderRootContainerItemIdentifier&quot; ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).action.bulk</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>CONTEXT_MENU_BULK_RETREIVE</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Note that we are comparing with != YES instead of == NO in the query to avoid having to write out the value for the default case</string>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.userInfo.heart != YES  &amp;&amp; $item.cleanup!=TRUE).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).action.cleanup</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>CONTEXT_MENU_CLEANUP</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Note that we are comparing with != YES instead of == NO in the query to avoid having to write out the value for the default case</string>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.userInfo.heart != YES &amp;&amp; $item.itemIdentifier != &quot;NSFileProviderRootContainerItemIdentifier&quot; ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).action.externalshare</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>CONTEXT_MENU_EXTERNAL_SHARING</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Note that we are comparing with != YES instead of == NO in the query to avoid having to write out the value for the default case</string>
+				<key>NSExtensionFileProviderActionActivationRule</key>
+				<string>SUBQUERY ( fileproviderItems, $item, $item.itemIdentifier == &quot;NSFileProviderRootContainerItemIdentifier&quot; ).@count &gt; 0</string>
+				<key>NSExtensionFileProviderActionIdentifier</key>
+				<string>$(PRODUCT_BUNDLE_IDENTIFIER).action.restorecontent</string>
+				<key>NSExtensionFileProviderActionName</key>
+				<string>CONTEXT_MENU_RESTORE_CONTENT</string>
+			</dict>
+		</array>
 	</dict>
 </dict>
 </plist>

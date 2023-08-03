@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Cydrive
+
+  Created by Debasish Nandi on 03/08/23.
+  
+*/
+
+"CONTEXT_MENU_SHARE"="Manage Sharing";
+"CONTEXT_MENU_VERSION_HISTORY"="Manage Versions";
+"CONTEXT_MENU_BULK_RETREIVE"="Bulk Retreive";
+"CONTEXT_MENU_CLEANUP"="Cleanup";
+"CONTEXT_MENU_EXTERNAL_SHARING"="External Sharing";
+"CONTEXT_MENU_RESTORE_CONTENT"="Restore Files & Folders";

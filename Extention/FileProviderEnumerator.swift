@@ -15,6 +15,8 @@ class FileProviderEnumerator: NSObject, NSFileProviderEnumerator {
     private let anchor = NSFileProviderSyncAnchor("an anchor".data(using: .utf8)!)
     private var retrys: UInt8 = 0
     
+    public static var ContentMap:[String:CyItem] = [:]
+    
     init(enumeratedItemIdentifier: NSFileProviderItemIdentifier) {
         self.enumeratedItemIdentifier = enumeratedItemIdentifier
         super.init()
@@ -39,19 +41,18 @@ class FileProviderEnumerator: NSObject, NSFileProviderEnumerator {
          - inform the observer that you are finished with this page
          */
         
-        
         Task{
             do {
                 var filepath:String = ""
-                var items: [Item] = []
+                var items: [CyItem] = []
                 
                 if enumeratedItemIdentifier != .rootContainer && enumeratedItemIdentifier != .trashContainer && enumeratedItemIdentifier != .workingSet{
                     filepath = enumeratedItemIdentifier.rawValue
                 }
                 
-                filepath = URL.toIPFSPath(path: filepath)
+                filepath = URL.toIPFSPathForOprations(path: filepath)
                 
-                let fileslist = try await FilesList(filepath: filepath)
+                let fileslist = try await FilesLswsh(filepath: filepath)
                 
                 guard let list = fileslist.Entries else {
                     observer.didEnumerate(items)
@@ -59,21 +60,35 @@ class FileProviderEnumerator: NSObject, NSFileProviderEnumerator {
                     return
                 }
                 
-                if enumeratedItemIdentifier != .rootContainer && enumeratedItemIdentifier != .trashContainer && enumeratedItemIdentifier != .workingSet{
+                if enumeratedItemIdentifier != .rootContainer && enumeratedItemIdentifier != .trashContainer && enumeratedItemIdentifier != .workingSet && !URL.isValidEmailAddress(filepath){
                     
                     list.forEach { element in
                         var e = element
                         
-                        let fpath = URL.toItemIdentifier(path: enumeratedItemIdentifier.rawValue+"/"+element.Name)
-                        e.Name = URL.toItemIdentifier(path: enumeratedItemIdentifier.rawValue+"/"+element.Name)
+                        let fpath = URL.toItemIdentifier(string: enumeratedItemIdentifier.rawValue+"/"+element.Name)
+                        e.Name = fpath
                         
-                        items.append(Item(fileItem: e, parentItem: enumeratedItemIdentifier, filePath: fpath))
+                        let item = CyItem(fileItem: e, parentItem: enumeratedItemIdentifier, filePath: fpath)
+                        FileProviderEnumerator.ContentMap[fpath] = item
+                        
+                        items.append(item)
                     }
                 } else {
-                    list.forEach { element in
+                    for element in list {
+                        let fpath = URL.toItemIdentifier(string: "/"+element.Name)
                         
-                        let fpath = URL.toItemIdentifier(path: enumeratedItemIdentifier.rawValue+"/"+element.Name)
-                        items.append(Item(fileItem: element, parentItem: enumeratedItemIdentifier, filePath: fpath))
+                        if URL.isValidEmailAddress(fpath) {
+                            
+                            let allItems = try await getFilesListInPath(ipfspath: fpath)
+                            
+                            items.append(contentsOf: allItems)
+                        } else {
+                            
+                            let item = CyItem(fileItem: element, parentItem: enumeratedItemIdentifier, filePath: fpath)
+                            FileProviderEnumerator.ContentMap[fpath] = item
+                            
+                            items.append(item)
+                        }
                     }
                 }
                 
@@ -87,52 +102,94 @@ class FileProviderEnumerator: NSObject, NSFileProviderEnumerator {
     }
     
     func enumerateChanges(for observer: NSFileProviderChangeObserver, from anchor: NSFileProviderSyncAnchor) {
-        /* TODO:
-         - query the server for updates since the passed-in sync anchor
-         
-         If this is an enumerator for the active set:
-         - note the changes in your local database
-         
-         - inform the observer about item deletions and updates (modifications + insertions)
-         - inform the observer when you have finished enumerating up to a subsequent sync anchor
-         */
-        Task{
-            var filepath:String = ""
-            var items: [Item] = []
-            
-            if enumeratedItemIdentifier != .rootContainer && enumeratedItemIdentifier != .trashContainer && enumeratedItemIdentifier != .workingSet{
-                filepath = enumeratedItemIdentifier.rawValue
-            }
-            
-            let itemcontents = try await getFilesListInPathRecursively(ipfspath: filepath)
-            items.append(contentsOf: itemcontents)
-  
-            observer.didUpdate(items)
-            observer.finishEnumeratingChanges(upTo: NSFileProviderSyncAnchor("response.rank".data(using: .utf8)!), moreComing: false)
-        }
+        observer.finishEnumeratingChanges(upTo: NSFileProviderSyncAnchor("response.rank".data(using: .utf8)!), moreComing: false)
     }
     
-    private func getFilesListInPathRecursively(ipfspath:String) async throws -> [Item] {
-        var items: [Item] = []
+//    func enumerateChanges(for observer: NSFileProviderChangeObserver, from anchor: NSFileProviderSyncAnchor) {
+//        /* TODO:
+//         - query the server for updates since the passed-in sync anchor
+//
+//         If this is an enumerator for the active set:
+//         - note the changes in your local database
+//
+//         - inform the observer about item deletions and updates (modifications + insertions)
+//         - inform the observer when you have finished enumerating up to a subsequent sync anchor
+//         */
+//        Task{
+//            var filepath:String = ""
+//            var items: [Item] = []
+//
+//            if enumeratedItemIdentifier != .rootContainer && enumeratedItemIdentifier != .trashContainer && enumeratedItemIdentifier != .workingSet && URL.isValidEmailAddress(enumeratedItemIdentifier.rawValue){
+//                filepath = enumeratedItemIdentifier.rawValue
+//            }
+//
+//            let itemcontents = try await getFilesListInPathRecursively(ipfspath: filepath)
+//            items.append(contentsOf: itemcontents)
+//
+//            observer.didUpdate(items)
+//            observer.finishEnumeratingChanges(upTo: NSFileProviderSyncAnchor("response.rank".data(using: .utf8)!), moreComing: false)
+//        }
+//    }
+    
+    private func getFilesListInPath(ipfspath:String) async throws -> [CyItem] {
+        var items: [CyItem] = []
         
         let filepath = URL.toIPFSPath(path: ipfspath)
         
-        let fileslist = try await FilesList(filepath: filepath)
+        let fileslist = try await FilesLswsh(filepath: filepath)
         
         guard let list = fileslist.Entries else {
             return items
         }
         
-        if filepath != "/"{
-            
+        if !URL.isValidEmailAddress(filepath){
             for element in list{
                 var e = element
-                let fpath = URL.toItemIdentifier(path: filepath+"/"+element.Name)
+                let fpath = URL.toItemIdentifier(string: filepath+"/"+element.Name)
                 e.Name = fpath
                 
                 let parent = getParentIdentifier(of: fpath)
                 
-                let item = Item(fileItem: e, parentItem: parent)
+                let item = CyItem(fileItem: e, parentItem: parent, filePath: fpath)
+                FileProviderEnumerator.ContentMap[fpath] = item
+
+                items.append(item)
+
+            }
+        } else {
+            for element in list{
+                let fpath = URL.toItemIdentifier(string: "/"+element.Name)
+                
+                let item = CyItem(fileItem: element, parentItem: enumeratedItemIdentifier, filePath: fpath)
+                FileProviderEnumerator.ContentMap[fpath] = item
+                
+                items.append(item)
+            }
+        }
+        
+        return items
+    }
+    
+    private func getFilesListInPathRecursively(ipfspath:String) async throws -> [CyItem] {
+        var items: [CyItem] = []
+        
+        let filepath = URL.toIPFSPath(path: ipfspath)
+        
+        let fileslist = try await FilesLswsh(filepath: filepath)
+        
+        guard let list = fileslist.Entries else {
+            return items
+        }
+        
+        if !URL.isValidEmailAddress(filepath){
+            for element in list{
+                var e = element
+                let fpath = URL.toItemIdentifier(string: filepath+"/"+element.Name)
+                e.Name = fpath
+                
+                let parent = getParentIdentifier(of: fpath)
+                
+                let item = CyItem(fileItem: e, parentItem: parent)
                 items.append(item)
                 
                 if item.contentType == .folder {
@@ -142,9 +199,9 @@ class FileProviderEnumerator: NSObject, NSFileProviderEnumerator {
             }
         } else {
             for element in list{
-                let fpath = URL.toItemIdentifier(path: "/"+element.Name)
+                let fpath = URL.toItemIdentifier(string: "/"+element.Name)
                 
-                let item = Item(fileItem: element, parentItem: enumeratedItemIdentifier, filePath: fpath)
+                let item = CyItem(fileItem: element, parentItem: enumeratedItemIdentifier, filePath: fpath)
                 items.append(item)
                 
                 if item.contentType == .folder {
@@ -162,11 +219,13 @@ class FileProviderEnumerator: NSObject, NSFileProviderEnumerator {
     }
     
     func getParentIdentifier(of filePath:String) -> NSFileProviderItemIdentifier{
-        let parrawid = filePath.components(separatedBy: "/").dropLast().joined(separator: "/")
+        var parrawid = filePath.components(separatedBy: "/").dropLast().joined(separator: "/")
         
-        var parentIdentifier = NSFileProviderItemIdentifier(parrawid)
+        parrawid = URL.toItemIdentifier(string: parrawid)
         
-        if parrawid == "" {
+        var parentIdentifier = NSFileProviderItemIdentifier("/"+parrawid)
+        
+        if parrawid == "/" || URL.isValidEmailAddress(parrawid){
             parentIdentifier = .rootContainer
         }
         

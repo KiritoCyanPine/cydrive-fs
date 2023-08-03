@@ -13,8 +13,8 @@ import AppKit
 
 extension FileProviderExtension {
     
-    func getIPFSFileDetails(inpath fpath:String ) async throws -> Item {
-        let itempath = URL.toItemIdentifier(path: fpath)
+    func getIPFSFileDetails_Old(inpath fpath:String ) async throws -> Item_Old {
+        let itempath = URL.toIPFSPathForOprations(path: fpath)
         
         let Filestat = try await FilesStat(filepath: fpath)
         
@@ -27,7 +27,19 @@ extension FileProviderExtension {
         
         let parentIdentifier = self.getParentIdentifier(of: itempath)
         
-        return Item(fileItem: file,parentItem: parentIdentifier)
+        return Item_Old(fileItem: file,parentItem: parentIdentifier, filePath: itempath)
+    }
+    
+    func getIPFSFileDetails(inpath fpath:String ) async throws -> CyItem {
+        let itempath = URL.toIPFSPathForOprations(path: fpath)
+        
+        let Filestat = try await FilesStat(filepath: fpath)
+        
+        let file = FileInfoWSh(Name: itempath, Size: Int64(Filestat.Size!), IsDirectory: Filestat.`Type` == "directory" ? true:false, IsLocal: true, CreatedOn: 0, ModifiedOn: 0, EDEK: "", Hash: Filestat.Hash!, Pinned: true, CrossDomain: false, AccountId: "")
+        
+        let parentIdentifier = self.getParentIdentifier(of: itempath)
+        
+        return CyItem(fileItem: file,parentItem: parentIdentifier)
     }
     
     func evictItem(Item fileIdentifier: NSFileProviderItem) {
@@ -54,11 +66,15 @@ extension FileProviderExtension {
     }
     
     func getParentIdentifier(of filePath:String) -> NSFileProviderItemIdentifier{
-        let parrawid = filePath.components(separatedBy: "/").dropLast().joined(separator: "/")
+        var parrawid = filePath.components(separatedBy: "/").dropLast().joined(separator: "/")
+        
+        parrawid = URL.toPathWithoutEmail(path: parrawid)
+        
+        parrawid = URL.toItemIdentifier(string: parrawid)
         
         var parentIdentifier = NSFileProviderItemIdentifier(parrawid)
         
-        if parrawid == "" {
+        if parrawid == "/" || URL.isValidEmailAddress(parrawid){
             parentIdentifier = .rootContainer
         }
         

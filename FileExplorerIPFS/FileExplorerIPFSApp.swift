@@ -65,9 +65,15 @@ struct FileExplorerIPFSApp:App {
 //    static func main() {
 //        // Your code logic here, without the UI
 //        // For example, you can call functions or start background tasks
-//        var _: () = FileProvide().endCydrive()
+//        var _: () = FileProvide().applicationDidFinishLaunching()
 //    }
-    
+//
+//    var body: some Scene {
+//
+//        WindowGroup {
+//            ContentRefreshView()
+//        }
+//    }
     var body: some Scene {
 
         WindowGroup {

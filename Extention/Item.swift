@@ -9,7 +9,7 @@ import FileProvider
 import UniformTypeIdentifiers
 import ipfs_api
 
-class Item: NSObject, NSFileProviderItemProtocol {
+class Item_Old: NSObject, NSFileProviderItemProtocol {
 
     // TODO: implement an initializer to create an item from your extension's backing model
     // TODO: implement the accessors to return the values from your extension's backing model
@@ -143,14 +143,12 @@ class Item: NSObject, NSFileProviderItemProtocol {
     }
 }
 
-class CyItem: NSObject, NSFileProviderItemProtocol {
+class CyItem: NSObject, NSFileProviderItemProtocol, NSFileProviderItemDecorating {
     private let identifier: NSFileProviderItemIdentifier
-    
-    private var parentItem: NSFileProviderItemIdentifier?
-    
     private let fileItemPath: String?
     
-    var fileDetails: FileInfoWSh?
+    private var parentItem: NSFileProviderItemIdentifier?
+    public var fileDetails: FileInfoWSh?
     
     init(identifier: NSFileProviderItemIdentifier) {
         self.identifier = identifier
@@ -216,7 +214,11 @@ class CyItem: NSObject, NSFileProviderItemProtocol {
             return false
         }
         
-        return !filedets.IsLocal
+        if filedets.IsLocal == true {
+            return false
+        }
+        
+        return true
     }
     
 #if os(macOS)
@@ -275,5 +277,16 @@ class CyItem: NSObject, NSFileProviderItemProtocol {
 
         // Create the date from the date components
         return calendar.date(from: dateComponents)
+    }
+    
+    static let decorationPrefix = Bundle.main.bundleIdentifier!
+    static let heartItem = NSFileProviderItemDecorationIdentifier(rawValue: "\(decorationPrefix).cyfile")
+    
+    var decorations: [NSFileProviderItemDecorationIdentifier]? {
+        var decos = [NSFileProviderItemDecorationIdentifier]()
+        
+        decos.append(CyItem.heartItem)
+        
+        return decos
     }
 }

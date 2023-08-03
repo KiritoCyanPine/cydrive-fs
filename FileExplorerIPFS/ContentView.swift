@@ -30,9 +30,31 @@ struct ContentView: View {
             }
         }
         .padding()
-        
-        
-        
+    }
+     
+}
+
+
+struct ContentRefreshView: View {
+    
+    @State private var filepath: String = ""
+    
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, Cydrive!")
+            
+            Button("Unmount Cydrive", action: endServe)
+            
+            TextField("File path of the file...", text: $filepath)
+            
+            HStack{
+                Button("Refresh Dir", action:{ refreshScreen(identifire:filepath)})
+            }
+        }
+        .padding()
     }
      
 }
